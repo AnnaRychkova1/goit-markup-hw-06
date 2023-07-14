@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Studio</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,9 +25,9 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-header">Studio</span></a
-          >
+          <a class="logo link header-link" href="./index.html"
+            >Web<span class="logo-header">Studio</span>
+          </a>
           <ul class="header-nav-list list">
             <li class="header-nav-item">
               <a
@@ -51,6 +52,15 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#menu-sites"></use>
+          </svg>
+        </button>
         <address class="header-address">
           <ul class="header-address-list list">
             <li class="header-address-item">
@@ -102,8 +112,34 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/bankingapp.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-1@1x.jpg 1x,
+                        ./images/portfolio/mobile-1@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-1@1x.jpg"
+                      alt="Banking App Interface Concept"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-1@1x.jpg 1x,
+                        ./images/portfolio/tablet-1@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-1@1x.jpg"
+                      alt="Banking App Interface Concept"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-1@1x.jpg 1x,
+                        ./images/portfolio/desctop-1@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-1@1x.jpg"
                       alt="Banking App Interface Concept"
                       width="360"
                       height="300"
@@ -130,8 +166,34 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/cashlesspayment.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-2@1x.jpg 1x,
+                        ./images/portfolio/mobile-2@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-2@1x.jpg"
+                      alt="Cashless Payment"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-2@1x.jpg 1x,
+                        ./images/portfolio/tablet-2@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-2@1x.jpg"
+                      alt="Cashless Payment"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-2@1x.jpg 1x,
+                        ./images/portfolio/desctop-2@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-2@1x.jpg"
                       alt="Cashless Payment"
                       width="360"
                       height="300"
@@ -156,8 +218,34 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/meditation.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-3@1x.jpg 1x,
+                        ./images/portfolio/mobile-3@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-3@1x.jpg"
+                      alt="Meditation App"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-3@1x.jpg 1x,
+                        ./images/portfolio/tablet-3@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-3@1x.jpg"
+                      alt="Meditation App"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-3@1x.jpg 1x,
+                        ./images/portfolio/desctop-3@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-3@1x.jpg"
                       alt="Meditation App"
                       width="360"
                       height="300"
@@ -182,10 +270,36 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/taxiservice.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-4@1x.jpg 1x,
+                        ./images/portfolio/mobile-4@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-4@1x.jpg"
                       alt="Taxi Service"
-                      width="360"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-4@1x.jpg 1x,
+                        ./images/portfolio/tablet-4@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-4@1x.jpg"
+                      alt="Taxi Service"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-4@1x.jpg 1x,
+                        ./images/portfolio/desctop-4@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-4@1x.jpg"
+                      alt="Taxi Service"
+                      width="356"
                       height="300"
                     />
                   </div>
@@ -208,8 +322,34 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/illustration.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-5@1x.jpg 1x,
+                        ./images/portfolio/mobile-5@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-5@1x.jpg"
+                      alt="Screen Illustrations"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-5@1x.jpg 1x,
+                        ./images/portfolio/tablet-5@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-5@1x.jpg"
+                      alt="Screen Illustrations"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-5@1x.jpg 1x,
+                        ./images/portfolio/desctop-5@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-5@1x.jpg"
                       alt="Screen Illustrations"
                       width="360"
                       height="300"
@@ -234,8 +374,34 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/onlinecourses.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-6@1x.jpg 1x,
+                        ./images/portfolio/mobile-6@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-6@1x.jpg"
+                      alt="Online Courses"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-6@1x.jpg 1x,
+                        ./images/portfolio/tablet-6@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-6@1x.jpg"
+                      alt="Online Courses"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-6@1x.jpg 1x,
+                        ./images/portfolio/desctop-6@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-6@1x.jpg"
                       alt="Online Courses"
                       width="360"
                       height="300"
@@ -260,10 +426,36 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/instagramconcept.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-7@1x.jpg 1x,
+                        ./images/portfolio/mobile-7@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-7@1x.jpg"
                       alt="Instagram Stories Concept"
-                      width="360"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-7@1x.jpg 1x,
+                        ./images/portfolio/tablet-7@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-7@1x.jpg"
+                      alt="Instagram Stories Concept"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-7@1x.jpg 1x,
+                        ./images/portfolio/desctop-7@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-7@1x.jpg"
+                      alt="Instagram Stories Concept"
+                      width="356"
                       height="300"
                     />
                   </div>
@@ -286,8 +478,34 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/organicfood.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-8@1x.jpg 1x,
+                        ./images/portfolio/mobile-8@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-8@1x.jpg"
+                      alt="Organic Food"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-8@1x.jpg 1x,
+                        ./images/portfolio/tablet-8@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-8@1x.jpg"
+                      alt="Organic Food"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-8@1x.jpg 1x,
+                        ./images/portfolio/desctop-8@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-8@1x.jpg"
                       alt="Organic Food"
                       width="360"
                       height="300"
@@ -312,8 +530,34 @@
                 <div class="portfolio-overlay">
                   <div class="portfolio-wrapper">
                     <img
-                      class="portfolio-project-image"
-                      src="./images/portfolio/freshcoffee.jpg"
+                      class="portfolio-project-mobile"
+                      srcset="
+                        ./images/portfolio/mobile-9@1x.jpg 1x,
+                        ./images/portfolio/mobile-9@2x.jpg 2x
+                      "
+                      src="./images/portfolio/mobile-9@1x.jpg"
+                      alt="Fresh Coffee"
+                      width="396"
+                      height="280"
+                    />
+                    <img
+                      class="portfolio-project-tablet"
+                      srcset="
+                        ./images/portfolio/tablet-9@1x.jpg 1x,
+                        ./images/portfolio/tablet-9@2x.jpg 2x
+                      "
+                      src="./images/portfolio/tablet-9@1x.jpg"
+                      alt="Fresh Coffee"
+                      width="356"
+                      height="300"
+                    />
+                    <img
+                      class="portfolio-project-desctop"
+                      srcset="
+                        ./images/portfolio/desctop-9@1x.jpg 1x,
+                        ./images/portfolio/desctop-9@2x.jpg 2x
+                      "
+                      src="./images/portfolio/desctop-9@1x.jpg"
                       alt="Fresh Coffee"
                       width="360"
                       height="300"
@@ -338,9 +582,9 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer-container">
-        <div class="footer-left">
+        <div class="footer-side">
           <a class="link logo footer-link" href="./index.html"
             >Web<span class="logo-footer">Studio</span></a
           >
@@ -349,7 +593,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-middle">
+        <div class="footer-side">
           <p class="footer-network-text">Social media</p>
           <ul class="list network-list network-list-footer">
             <li class="network-item network-item-footer">
@@ -402,7 +646,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-right">
+        <div class="footer-side">
           <p class="footer-text-subscribe">Subscribe</p>
           <form class="footer-form" name="subscribe_form" autocomplete="off">
             <label class="footer-form-field">
