@@ -861,6 +861,13 @@ input {
     
   }
 }
+@media only screen and (min-width: 1158px) {
+  .footer-container {
+    padding-left: 15px;
+    gap: 80px;
+    justify-content: start;
+  }
+}
 
 .footer-side {
     display: flex;
@@ -868,6 +875,8 @@ input {
     gap: 16px;
     align-items: center;
 }
+
+
 
 @media only screen and (min-width: 768px) {
     .footer-side {
@@ -882,6 +891,18 @@ input {
     max-width: 268px;
     font-weight: 400;
     color: var(--text-footer-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-text {
+    max-width: 264px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-text {
+    margin-right: 40px;
+  }
 }
 
 .footer-network-text {
